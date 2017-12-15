@@ -1,0 +1,13 @@
+.hero {
+    height: 400px;
+}
+.standard {
+    height: 200px;
+}
+.tuscany1 {
+    background-image: url("tuscany1.jpeg");
+    background-size: cover;
+}
+div {
+    overflow: hidden;
+}

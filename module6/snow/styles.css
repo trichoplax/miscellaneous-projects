@@ -1,0 +1,36 @@
+body {
+    background-image: url("Snowy-Central-Park-Bridge-Scene-IMG-5050.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+@keyframes snowfall {
+    0% {
+        top: -10vh;
+        transform: rotate(0deg) translate(0vw, 0vw);
+    }
+    50% {
+        top: 50vh;
+        transform: rotate(179deg) translate(10vw, 0vw);
+    }
+    100% {
+        top: 110vh;
+        transform: rotate(359deg) translate(10vw, 0vw);
+    }
+}
+.snowflake {
+    transform: rotate(0deg) translate(0vw, 0vw);
+    position: absolute;
+    top: -100px;
+    left: 20vw;
+    width: 50px;
+    height: 50px;
+    background-image: url("blue-1294278_960_720.png");
+    background-position: center;
+    background-size: cover;
+    animation-name: snowfall;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
